@@ -1,4 +1,4 @@
-package com.oomph.application.model;
+package com.oomph.model;
 
 public class Product {
     String name;
