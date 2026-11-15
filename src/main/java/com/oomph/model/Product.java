@@ -6,6 +6,8 @@ public class Product {
     private int availableStock;
 
     public Product(String name, int priceInCents, int availableStock) {
-
+        this.name = name;
+        this.priceInCents = priceInCents;
+        this.availableStock = availableStock;
     }
 }
