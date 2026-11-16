@@ -34,4 +34,21 @@ public class Product {
     public int getAvailableStock() {
         return availableStock;
     }
+
+    public boolean reduceStock(int quantity) {
+
+        if (quantity <= 0 || quantity > availableStock) {
+            return false;
+        }
+
+        availableStock -= quantity;
+        return true;
+    }
+
+    public void displayProductDetails() {
+
+        System.out.println("Product: " + name);
+        System.out.println("Price: €" + priceInCents / 100.0);
+        System.out.println("Stock: " + availableStock);
+    }
 }
