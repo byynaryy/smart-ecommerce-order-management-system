@@ -6,6 +6,18 @@ public class Product {
     private int availableStock;
 
     public Product(String name, int priceInCents, int availableStock) {
+        if(name==null || name.isBlank()) {
+            throw new IllegalArgumentException("Product name is required");
+        }
+
+        if(priceInCents < 0) {
+            throw new IllegalArgumentException("Price can not be negative");
+        }
+
+        if(availableStock < 0) {
+            throw new IllegalArgumentException("Available stock can not be negative");
+        }
+
         this.name = name;
         this.priceInCents = priceInCents;
         this.availableStock = availableStock;
