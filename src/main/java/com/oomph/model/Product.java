@@ -22,4 +22,16 @@ public class Product {
         this.priceInCents = priceInCents;
         this.availableStock = availableStock;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getPriceInCents() {
+        return priceInCents;
+    }
+
+    public int getAvailableStock() {
+        return availableStock;
+    }
 }
