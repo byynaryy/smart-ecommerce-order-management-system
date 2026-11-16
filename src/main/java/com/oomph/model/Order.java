@@ -20,4 +20,16 @@ public class Order {
     public int calculateSubtotal() {
         return product.getPriceInCents() * quantity;
     }
+
+    public void displayOrderSummary() {
+
+        System.out.println("===== ORDER SUMMARY =====");
+
+        System.out.println("Product: " + product.getName());
+        System.out.println("Quantity: " + quantity);
+
+        System.out.println(
+                "Subtotal: €" + calculateSubtotal() / 100.0
+        );
+    }
 }
