@@ -18,7 +18,7 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public int calculateSubtotal() {
+    public long calculateSubtotal() {
         return product.getPriceInCents() * quantity;
     }
 
