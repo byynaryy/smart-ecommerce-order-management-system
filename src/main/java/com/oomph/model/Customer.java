@@ -6,6 +6,10 @@ public class Customer {
     private String email;
 
     public  Customer(int customerId, String name, String email) {
+        if (customerId <= 0) {
+            throw new IllegalArgumentException("Customer ID must be positive");
+        }
+
         if(name==null || name.isBlank()) {
             throw  new IllegalArgumentException("name can not be empty");
         }
