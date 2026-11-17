@@ -31,6 +31,8 @@ public class Order {
 
         System.out.println("===== ORDER SUMMARY =====");
 
+        System.out.println("Customer: " + customer.getName());
+        System.out.println("Email: " + customer.getEmail());
         System.out.println("Product: " + product.getName());
         System.out.println("Quantity: " + quantity);
 
