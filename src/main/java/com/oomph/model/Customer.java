@@ -18,6 +18,10 @@ public class Customer {
             throw  new IllegalArgumentException("email can not be empty");
         }
 
+        if (!email.contains("@")) {
+            throw new IllegalArgumentException("Invalid email address");
+        }
+
         this.customerId = customerId;
         this.name = name;
         this.email = email;
