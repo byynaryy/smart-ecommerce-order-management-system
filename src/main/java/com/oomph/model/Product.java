@@ -36,17 +36,21 @@ public class Product {
     }
 
     public boolean reduceStock(int quantity) {
-
         if (quantity <= 0 || quantity > availableStock) {
             return false;
         }
-
         availableStock -= quantity;
         return true;
     }
 
-    public void displayProductDetails() {
+    public void increaseStock(int quantity) {
+        if (quantity <= 0) {
+            throw new IllegalArgumentException("Quantity must be positive");
+        }
+        availableStock += quantity;
+    }
 
+    public void displayProductDetails() {
         System.out.println("Product: " + name);
         System.out.println("Price: €" + priceInCents / 100.0);
         System.out.println("Stock: " + availableStock);
