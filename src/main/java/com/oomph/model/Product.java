@@ -2,7 +2,7 @@ package com.oomph.model;
 
 public class Product {
     private String name;
-    private int priceInCents;
+    private long priceInCents;
     private int availableStock;
 
     public Product(String name, int priceInCents, int availableStock) {
@@ -27,7 +27,7 @@ public class Product {
         return name;
     }
 
-    public int getPriceInCents() {
+    public long getPriceInCents() {
         return priceInCents;
     }
 
