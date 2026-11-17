@@ -5,7 +5,11 @@ public class Order {
     private Product product;
     private int quantity;
 
-    public Order(Product product, int quantity) {
+    public Order(Customer customer, Product product, int quantity) {
+        if (customer == null) {
+            throw new IllegalArgumentException("Customer is required");
+        }
+
         if (product == null) {
             throw new IllegalArgumentException("Product is required");
         }
@@ -14,6 +18,7 @@ public class Order {
             throw new IllegalArgumentException("Quantity must be positive");
         }
 
+        this.customer = customer;
         this.product = product;
         this.quantity = quantity;
     }
