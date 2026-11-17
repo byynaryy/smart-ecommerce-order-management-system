@@ -1,6 +1,7 @@
 package com.oomph.model;
 
 public class Order {
+    private Customer customer;
     private Product product;
     private int quantity;
 
