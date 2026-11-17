@@ -31,4 +31,10 @@ public class Customer {
         return email;
     }
 
+    public void displayCustomerDetails() {
+        System.out.println("Customer Id: " + customerId);
+        System.out.println("Customer name: " + name);
+        System.out.println("Customer email: " + email);
+    }
+
 }
