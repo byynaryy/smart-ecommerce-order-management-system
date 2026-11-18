@@ -10,11 +10,11 @@ public class Customer {
             throw new IllegalArgumentException("Customer ID must be positive");
         }
 
-        if(name==null || name.isBlank()) {
+        if(name == null || name.isBlank()) {
             throw  new IllegalArgumentException("name can not be empty");
         }
 
-        if(email==null || email.isBlank()) {
+        if(email == null || email.isBlank()) {
             throw  new IllegalArgumentException("email can not be empty");
         }
 
