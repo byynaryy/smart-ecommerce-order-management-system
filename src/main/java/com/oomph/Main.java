@@ -10,5 +10,7 @@ public class Main {
                 "alice@example.com",
                 10
         );
+
+        customer.displayCustomerDetails();
     }
 }
