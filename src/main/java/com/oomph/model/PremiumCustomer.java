@@ -11,4 +11,12 @@ public class PremiumCustomer extends Customer {
     public double getDiscountRate() {
         return discountRate;
     }
+
+    @Override
+    public void displayCustomerDetails() {
+        super.displayCustomerDetails();
+
+        System.out.println("Customer type: Premium");
+        System.out.println("Discount: " + discountRate + "%");
+    }
 }
