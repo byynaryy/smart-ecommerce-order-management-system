@@ -3,7 +3,7 @@ package com.oomph.model;
 public class PremiumCustomer extends Customer {
     private double discountRate;
 
-    public PremiumCustomer(int customerId, String name, String email) {
+    public PremiumCustomer(int customerId, String name, String email, double discountRate) {
         super(customerId, name, email);
         this.discountRate = discountRate;
     }
