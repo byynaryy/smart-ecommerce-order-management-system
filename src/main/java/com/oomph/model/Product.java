@@ -6,7 +6,7 @@ public class Product {
     private int availableStock;
 
     public Product(String name, int priceInCents, int availableStock) {
-        if(name==null || name.isBlank()) {
+        if(name == null || name.isBlank()) {
             throw new IllegalArgumentException("Product name is required");
         }
 
