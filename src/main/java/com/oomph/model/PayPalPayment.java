@@ -1,4 +1,4 @@
 package com.oomph.model;
 
-public class PayPalPayment {
+public class PayPalPayment implements PaymentMethod {
 }
