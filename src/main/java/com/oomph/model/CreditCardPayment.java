@@ -1,4 +1,4 @@
 package com.oomph.model;
 
-public class CreditCardPayment {
+public class CreditCardPayment implements PaymentMethod {
 }
