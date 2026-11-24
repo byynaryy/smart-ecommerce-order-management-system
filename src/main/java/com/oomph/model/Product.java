@@ -1,6 +1,8 @@
 package com.oomph.model;
 
 public class Product {
+    private static int productCount = 0;
+
     private String name;
     private long priceInCents;
     private int availableStock;
