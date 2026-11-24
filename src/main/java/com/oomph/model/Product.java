@@ -23,6 +23,8 @@ public class Product {
         this.name = name;
         this.priceInCents = priceInCents;
         this.availableStock = availableStock;
+
+        productCount++;
     }
 
     public String getName() {
