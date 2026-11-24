@@ -39,6 +39,10 @@ public class Product {
         return availableStock;
     }
 
+    public static int getProductCount() {
+        return productCount;
+    }
+
     public boolean reduceStock(int quantity) {
         if (quantity <= 0 || quantity > availableStock) {
             return false;
