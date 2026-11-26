@@ -25,6 +25,10 @@ public class Order {
         this.quantity = quantity;
     }
 
+    public OrderStatus getStatus() {
+        return status;
+    }
+
     public long calculateSubtotal() {
         return product.getPriceInCents() * quantity;
     }
