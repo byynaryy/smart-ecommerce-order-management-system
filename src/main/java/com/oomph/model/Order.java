@@ -5,6 +5,8 @@ public class Order {
     private Product product;
     private int quantity;
 
+    private OrderStatus status = OrderStatus.PENDING;
+
     public Order(Customer customer, Product product, int quantity) {
         if (customer == null) {
             throw new IllegalArgumentException("Customer is required");
