@@ -1,6 +1,7 @@
 package com.oomph.model;
 
 public class Order {
+    public  static final int MAX_ORDER_QUANTITY = 100;
     private Customer customer;
     private Product product;
     private int quantity;
