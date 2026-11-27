@@ -1,5 +1,7 @@
 package com.oomph.model;
 
+import com.oomph.enums.OrderStatus;
+
 public class Order {
     public  static final int MAX_ORDER_QUANTITY = 100;
     private Customer customer;

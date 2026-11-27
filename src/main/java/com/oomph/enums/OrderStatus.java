@@ -1,4 +1,4 @@
-package com.oomph.model;
+package com.oomph.enums;
 
 public enum OrderStatus {
     PENDING,
