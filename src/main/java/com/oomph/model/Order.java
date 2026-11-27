@@ -17,8 +17,8 @@ public class Order {
             throw new IllegalArgumentException("Product is required");
         }
 
-        if (quantity <= 0) {
-            throw new IllegalArgumentException("Quantity must be positive");
+        if (quantity <= 0 || quantity > MAX_ORDER_QUANTITY) {
+            throw new IllegalArgumentException("Quantity must be positive and not more than "+ MAX_ORDER_QUANTITY);
         }
 
         this.customer = customer;
